@@ -1,0 +1,61 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    background-color: #ccc;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+/*Aplica estilos solo al primer elemento hijo */
+ul li:first-child {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* Puedes seleccionar un elemento hijo específico */
+ul li:nth-child(2) {
+    color: yellow;
+    font-weight: bold;
+}
+
+/*Selecciona el ultimo elemento */
+ul li:last-child {
+    color: orange;
+    font-weight: bold;
+}
+
+#mi-enlace{
+font-size: 30px;
+color: lightsalmon;    
+}
+
+/* Cuando no hemos accedido a un enlace podemos aplicarle estilos*/
+#mi-enlace:link{
+    color: red;
+}
+
+/*Cuando pongamos el ratón sobre el enlace podemos aplicar estilos */
+#mi-enlace:hover{
+color: blue;
+}
+
+/* Los estilos se aplicarán cuando hagamos click*/
+#mi-enlace:active{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    }
+
+/* Aplica estilos a los inputos y su tipo específico */
+input[type="text"]{
+display: block;
+margin-top: 30px;    
+}    
+
+/* Aplica estilos cuando haces click en el input*/
+input[type="text"]:focus{
+    border: 4px  dashed red;   
+    }    

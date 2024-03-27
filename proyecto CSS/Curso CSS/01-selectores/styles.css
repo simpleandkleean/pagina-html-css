@@ -1,0 +1,121 @@
+/* 
+###################      SELECTORES    ####################
+*/
+
+/* Selector Universal - Aplicar estilos generales a todos
+ los elementos */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* Selector de etiqueta - Aplicar estilos a las etiquetas mencionadas */
+
+h1 {
+background-color: #77ddd4;
+color: #ffffff;
+padding: 10px;    
+}
+
+a{
+font-size: 18px;
+color: #008000;
+text-decoration: none;    
+}
+
+/* Editamos todos los enlaces que haya en el footer */
+footer a{
+ color: #77ddd4 ;
+}
+
+/* Selector de identificador - mediante el id asignado a la etiqueta
+Si queremos que diferentes elementos compartan los mismos estilos
+los añadimos mediante una coma */
+#descripcion, #titulo{
+    border: 5px solid #000000;
+    padding: 15px;
+}
+
+
+/*Esta definición de estilos sustituirá al h1 de arriba
+ya que la ultima modificación priorizará a la anterior */
+#titulo{
+background-color: blue;
+border: 2px dashed #ffffff;
+}
+
+/* Selector de clase -para elementos multiples con el 
+mismo tipo de nombre de clase asignada */
+
+.parrafo {
+font-style: italic;
+/*text-decoration: underline;*/
+font-weight: bold;
+}
+
+.parrafo1, .parrafo3 {
+background-color: #77ddd4;
+color: #ffffff;
+padding: 10px;    
+}
+
+.parrafo3 {
+    background-color: #ffa500;
+    color: #000000;
+}
+
+
+
+/* Selector de atributo */
+
+#usuario form {
+border: 5px solid #0000ff; 
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 20px;
+}
+
+#usuario form * {
+ display: block;   
+}
+
+#usuario label {
+  padding-bottom: 10px;  
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background-color: #008000;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+/* Selectores hijos */
+
+#menu >li  >a{ 
+    font-size: 18px;
+    color: #ff0000;
+    text-decoration: none;   
+}
+
+/* Prioridad 
+A más especifica la regla mas prioridad tiene
+con !important podemos darle prioridad*/
+
+#saludo h1{
+  background-color: #008000;  
+}
+
+h1 {
+ background-color: #800080;   
+}

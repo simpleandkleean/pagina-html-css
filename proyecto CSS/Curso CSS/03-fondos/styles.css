@@ -1,0 +1,48 @@
+body {
+    background-color: #ccc;
+
+    /*background-image: url(img/2023-css-only-circular-pattern.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*Mantener la posición del background fijo para que no se mueva al hacer
+    scroll 
+    background-attachment: fixed;
+    /*Mover la imagen de fondo de posición */
+    background-position: left bottom;
+    color: white;
+
+    /*Sangria de texto */
+    /*
+    text-indent: 15px;
+    */
+
+    /*Separación entre palabras */
+    /* 
+    word-spacing: 10px;
+  
+    letter-spacing: 5px;
+    */
+
+}
+
+
+
+#caja {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: #00ccff;
+    color: white;
+    font-family: "Open Sans";
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    vertical-align: top;
+}
+
+h2 {
+    color: #ff0000;
+    background: white;
+    background-image: url(img/css-background-pattern.png);
+    border: 5px solid #ff0000;
+}

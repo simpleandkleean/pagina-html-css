@@ -1,0 +1,53 @@
+/* Dar formato a las cajas*/
+
+* {
+ margin: 0px;
+ padding: 0px;   
+}
+
+body {
+ padding: 40px;   
+}
+
+#cajas{
+    max-width: 991px;
+    border: 1px solid black;
+}
+
+.caja{
+    /*Display block permite comportar el elemento como una 
+    caja, importante para aplicar elementos como float 
+     inline serviría mas para elementos tipo texto*/
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    border: 10px solid red;
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    padding-bottom: 34px;
+    /*flotar elementos para posicionarlos 
+    recordatorio usarlo para elementos de tipo bloque*/
+    float: left;
+}
+
+.caja p{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px; 
+  font-family: Arial;
+  line-height: 230px; 
+}
+
+.clearfix {
+    /*Cuando hacemos float a un elemento, los otros elementos
+    que no tengan float se adaptarán a los que si flotan, 
+    por lo que con clear eliminamos esos elementos sin 
+    float de al lado de los floats. */
+    float: none;
+    clear: both;
+}
